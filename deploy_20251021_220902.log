@@ -1,0 +1,29 @@
+[0;32m--- Starting HNG Stage 1 Automated Deployment Script ---[0m
+
+--- Collecting Deployment Parameters ---
+Enter Git Repository URL: Enter Git Personal Access Token (PAT): Enter branch name (default: main): Enter Remote SSH Username (e.g., ec2-user): Enter Remote Server IP Address: Enter Path to Private SSH Key (e.g., /c/Users/user/.ssh/key.pem): Enter Internal Container Port (e.g., 80): 
+[STATUS] Authenticating and preparing repository...
+[GIT] Repository already exists. Pulling latest changes from main...
+From https://github.com/Edwin-Oghenetejiri1/HNG13-stage1-devops-task
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Your branch is up to date with 'origin/main'.
+Already on 'main'
+[VERIFY] Checking for deployment files...
+[VERIFY] Docker files confirmed. Ready for remote transfer.
+
+--- Establishing SSH Connection to Remote Server (13.58.143.37) ---
+[CONNECTIVITY] SSH connection successful on remote host.
+[REMOTE] Updating system and installing necessary dependencies...
+Last metadata expiration check: 0:15:30 ago on Tue Oct 21 20:55:34 2025.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:15:30 ago on Tue Oct 21 20:55:34 2025.
+Package docker-25.0.13-1.amzn2023.0.1.x86_64 is already installed.
+Package nginx-1:1.28.0-1.amzn2023.0.2.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Docker version 25.0.13, build 0bab007
+bash: line 15: docker-compose: command not found
