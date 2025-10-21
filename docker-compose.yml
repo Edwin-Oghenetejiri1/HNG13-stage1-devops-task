@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    # Build the image from the Dockerfile in the current directory
+    build: .
+    # Give the container a recognizable name
+    container_name: hng-stage1-nginx
+    ports:
+      - "80:80"
+    restart: always
